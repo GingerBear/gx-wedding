@@ -53,10 +53,10 @@ Lottery.prototype = {
         x = x * 2;
         y = y * 2;
         this.maskCtx.beginPath();
-        var radgrad = this.maskCtx.createRadialGradient(x, y, 0, x, y, 100);
+        var radgrad = this.maskCtx.createRadialGradient(x, y, 0, x, y, 30);
         radgrad.addColorStop(0, 'rgba(0,0,0,1)');
         this.maskCtx.fillStyle = radgrad;
-        this.maskCtx.arc(x, y, 100, 0, Math.PI * 2, true);
+        this.maskCtx.arc(x, y, 30, 0, Math.PI * 2, true);
         this.maskCtx.fill();
     },
     bindEvent: function () {
